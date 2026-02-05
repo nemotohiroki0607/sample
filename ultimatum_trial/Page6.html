@@ -1,0 +1,34 @@
+{{ block title }}
+    結果の確認
+{{ endblock }}
+
+{{ block content }}
+<p>
+    プレイヤー１には最初に, <B>{{ C.ENDOWMENT }}</B>が渡されました. <br>
+    プレイヤー１はその中から, プレイヤー２に対して<B>{{ group.proposal }}</B>を渡すことを提案しました. <br>
+</p>
+{{ if group.accepted_or_not == False }}
+<p>
+    <B>プレイヤー２はこの提案を受け入れませんでした. </B><br>
+</p>
+{{ else }}
+<p>
+    <B>プレイヤー２はこの提案を受け入れました. </B><br>
+</p>
+{{ if group.accepted_or_not }}
+<p>
+    提案が受け入れられたため、プレイヤー1の提案どおりにポイントが分配されました。
+</p>
+{{ else }}
+<p>
+    提案が拒否されたため、両者とも0ポイントとなりました。
+</p>
+{{ endif }}
+{{ endif }}
+<p>
+    このゲームの結果, あなたは<B>{{ player.payoff }}</B>を獲得しました.
+</p>
+    {{ next_button }}
+{{ endblock }}
+
+

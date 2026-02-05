@@ -1,0 +1,46 @@
+{{ block title }}
+    提案額の決定
+{{ endblock }}
+
+{{ block content }}
+<p>
+    あなたは<B>プレイヤー１</B>に割り振られました
+</p>
+<p>あなたはいくら相手に渡しますか?</p>
+<div class="btn-toolbar me-2" role="toolbar" aria-label ="button
+group">
+<!-- 0-3ポイント -->
+<div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="submit" name="proposal" value="0" class="btn btn-primary">0pt
+    </button>
+    <button type="submit" name="proposal" value="1" class="btn btn-info">1pt
+    </button>
+    <button type="submit" name="proposal" value="2" class="btn btn-primary">2pt
+    </button>
+    <button type="submit" name="proposal" value="3" class="btn btn-info">3pt
+    </button>
+</div>
+<!-- 4-6ポイント -->
+<div class="btn-group me-2" role="group" aria-label="Second group">
+    <button type="submit" name="proposal" value="4" class="btn btn-primary">4pt
+    </button>
+    <button type="submit" name="proposal" value="5" class="btn btn-info">5pt
+    </button>
+    <button type="submit" name="proposal" value="6" class="btn btn-primary">6pt
+    </button>
+</div>
+<!-- 7-10ポイント -->
+<div class="btn-group me-2" role="group" aria-label="Thrid group">
+    <button type="submit" name="proposal" value="7" class="btn btn-info">7pt
+    </button>
+    <button type="submit" name="proposal" value="8" class="btn btn-primary">8pt
+    </button>
+    <button type="submit" name="proposal" value="9" class="btn btn-info">9pt
+    </button>
+    <button type="submit" name="proposal" value="10" class="btn btn-primary">10pt
+    </button>
+</div>
+</div>
+{{ endblock }}
+
+

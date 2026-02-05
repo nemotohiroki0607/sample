@@ -18,6 +18,12 @@ dict(
     display_name = "はじめての独裁者ゲーム",
     num_demo_participants = 2,
     app_sequence = ['dictator_trial']
+),
+dict(
+    name = 'UG',
+    display_name = "はじめての最終提案ゲーム",
+    num_demo_participants = 2,
+    app_sequence = ['ultimatum_trial']
 )
 ]
 
