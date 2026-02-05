@@ -57,11 +57,14 @@ SECRET_KEY = '1596343854378'
 
 ROOMS = [
     dict(
-        name = 'label',
-        display_name = '実験参加者 label',
-        participant_label_file = '_rooms/label.txt',
+        name='label',
+        display_name='実験参加者 label',
+        participant_label_file='_rooms/label.txt',
+        session_config_name='UG',
     ),
 ]
+
+
 
 
 
